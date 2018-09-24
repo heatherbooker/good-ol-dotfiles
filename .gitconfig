@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Heather Booker
+	email = heather.booker@adgear.com
+[alias]
+	recent = for-each-ref --count=8 --sort=-committerdate refs/heads/ --format='%(refname:short)'
