@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "we're setting up nvim! ...did you install it yet?"
+
+echo ""
+echo "download vim-plug, then come back: https://github.com/junegunn/vim-plug#installation"
+
+echo ""
+echo "making vim backup/swap/undo directories in ~/.vim"
+mkdir ~/.vim
+mkdir ~/.vim/backup
+mkdir ~/.vim/swap
+mkdir ~/.vim/undo
+
+echo ""
+echo "copying init.vim to ~/.config/nvim/init.vim"
+mkdir ~/.config
+mkdir ~/.config/nvim
+cp init.vim ~/.config/nvim/init.vim
+
+echo ""
+echo "all done! run ':PlugInstall' next time you open nvim (after installing vim-plug!) :)"
